@@ -1,0 +1,19 @@
+{
+  "name": "random-slide",
+  "version": "1.0.0",
+  "description": "* Import randomSlide to your project:\r   ```js\r   import randomSlide from './random-slide'\r * Select container by querySelector or anything else\r     ```js \r     document.querySelector()\r * Override all children layer (same position), the easiest way to do that is set `absolute` on CSS position\r * Finally run code and enjoys random animation effects\r     ```js\r     randomSlide(containerNode, options)\r Default option: `{direction = 'X', delay = 2000}`\r ## Here is Demo\r https://user-images.githubusercontent.com/98139595/192511257-c752fa8b-7544-42eb-a26f-26cf4d51c676.mp4",
+  "main": "random-slide.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HOAIAN2/random-slide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HOAIAN2/random-slide/issues"
+  },
+  "homepage": "https://github.com/HOAIAN2/random-slide#readme"
+}

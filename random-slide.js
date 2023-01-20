@@ -1,20 +1,9 @@
-function getRandomNumber(min, max) {
-    let randomNumber = (Math.random() * (max - min) + min).toFixed(0)
-    let number = parseInt(randomNumber)
-    return number
-}
 function createStack(children) {
-    let array = []
-    let isDone = false
-    while (!isDone) {
-        let random = getRandomNumber(0, children.length - 1)
-        while (array.includes(random)) {
-            random = getRandomNumber(0, children.length - 1)
-        }
-        array.push(random)
-        if (array.length === children.length) isDone = true
+    let setMap = new Set()
+    while (setMap.size !== children.length) {
+        setMap.add(Math.floor(Math.random() * children.length))
     }
-    return array
+    return Array.from(setMap)
 }
 function initLoadAnimation(children, stack, direction) {
     let offset
